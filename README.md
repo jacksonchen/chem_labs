@@ -1,2 +1,4 @@
-# chem_labs
-Chemistry II Labs
+# Chemistry II Labs
+Labs:
+- Titration Lab
+- Catalyst Effects Lab (IA)
