@@ -1,0 +1,359 @@
+\documentclass[10pt, letterpaper]{article}
+\usepackage[top=40pt,bottom=80pt,left=60pt,right=60pt]{geometry}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usepackage{float}
+\usepackage{rotating}
+\usepackage{titling}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+}
+\newcommand*{\figuretitle}[1]{%
+    {\centering%   <--------  will only affect the title because of the grouping (by the
+    \textbf{#1}%              braces before \centeri3ww3wng and behind \medskip). If you remove
+    \par\medskip}%            these braces the whole body of a {figure} env will be centered.
+}
+\usepackage{pgfplotstable}
+\usepackage{tikz}
+\usepackage[section]{placeins}
+\usepackage[utf8]{inputenc}
+
+\pgfplotsset{compat=1.11}
+
+\begin{document}
+
+\title{Characteristics of Titrations}
+\subtitle{Fairview High School IB Chemistry II Period 8, Dan Albritton}
+\author{Jay Bender, Jackson Chen, Shrihari Kote, Stevan Maksimovic, and Rahul Tholakapalli}
+\date{16 January 2015}
+
+
+
+\maketitle
+
+\section{Purpose}
+To perform three titrations (using a pH probe to graph the results) with different combinations of strong and weak acids/bases.
+\begin{itemize}
+
+\item {Case 1: strong acid and a strong base.}
+
+\item {Case 2: strong acid and a weak base.}
+
+\item {Case 3: weak acid and a strong base.}
+\end{itemize}
+
+The curves will then be analyzed as to the similarities and differences between overall shapes, equivalence points, buffering regions, and resulting pH values. Where applicable, Ka and Kb values will be determined from the graphs. Lastly, a diprotic acid titration curve will be graphed and analyzed from data provided.
+\section{Safety}
+Acidic and basic solutions can be dangerous. Two factors to consider are the concentration and strength of an acid. High concentrations of both strong and weak acids can cause damage; low concentrations of strong acids are also corrosive. Goggles are absolutely necessary and gloves are important for concentrations above 1M. Higher concentrations will be dispensed from and must remain in the fume hood.
+
+\section{Procedure}
+\begin{enumerate}
+\item {Wear goggles before beginning the experiment.}
+\item{Calibrate the pH probe using the provided buffer solutions.}
+\item{Place a buret into the ring clamp, and add strong base (NaOH) to the buret if needed.}
+\item{Add 10 mL of strong acid (HCl) into the Erlenmeyer flask.}
+\item{Add 30 mL of water (H$_{2}$O) to the flask.}
+\item{Add 3 drops of phenolphthalein to the solution.}
+\item{Put the Erlenmeyer flask onto the magnetic stir plate with the magnetic mixing pill inside the flask. Stir at a low speed.}
+\item{Move the buret containing the NaOH over the Erlenmeyer flask.}
+\item{Open Data Studio, set up the graph, click “Start”, and then “Keep." Type “0 mL” into the text field.}
+\item{Let NaOH out of the buret into the solution in small, decreasing increments. It is recommended that you let NaOH out at 1-2 mL increments at a time at the begining of the experiment and then decrease the amount to 0.2 mL increments as the equivalence point is approached.}
+\item{Measure the change in volume of NaOH after each release of NaOH. Add this value to the total value of NaOH that has been let out of the buret so far. Go to Data Studio and click “Keep” and enter the volume of base added to the solution. For example, if you let out 0.5 mL of NaOH and 4 mL has been let out so far, then the value you type in would be 4.5 mL.}
+\item{As the curve gets closer to the titration point, add ever-decreasing amounts of NaOH so the graph is mapped accurately.}
+\item{Once the titration point is passed, add larger amounts of NaOH at a time.}
+\item{Continue doing steps 8-13 until the titration curve is completely mapped out.}
+\item{Repeat procedure for case 2. For case 2 replace the titrand (the substance that is being titrated) with the weak base NH$_{3}$, but continue using the same titrant of HCl.}
+\item{Repeat procedure for case 3. For case 3 replace the titrand with the weak acid HC$_{2}$H$_{3}$O$_{2}$ and the titrant with NaOH.}
+\end{enumerate}
+\section{Data}
+
+\begin{table}[!htbp]
+\centering
+\begin{tabularx}{.8\textwidth}{>{\centering\arraybackslash}X>{\centering\arraybackslash}X }
+\hline
+\textbf{Volume HCl added (mL)} & \textbf{pH} \\ \hline
+0                           & 12.2        \\
+2                           & 12.5        \\
+2.5                         & 12.5        \\
+3.5                         & 12.5        \\
+4.5                         & 12.5        \\
+6.5                         & 12.4        \\
+7.5                         & 12.2        \\
+8                           & 12          \\
+8.3                         & 11.8        \\
+8.4                         & 11.7        \\
+8.5                         & 11.6        \\
+8.6                         & 11.3        \\
+8.7                         & 10.8        \\
+8.8                         & 9.3         \\
+8.9                         & 3           \\
+9                           & 2           \\
+9.1                         & 1.9         \\
+9.4                         & 1.4         \\
+9.9                         & 1.2         \\
+10.4                        & 1           \\
+11.5                        & 0.8         \\
+13.5                        & 0.6         \\
+15.6                        & 0.5         \\ \hline
+\end{tabularx}
+\caption{Data for titration of NaOH with HCl (Case 1)}
+\end{table}
+
+\begin{table}[!htbp]
+\centering
+\begin{tabularx}{.8\textwidth}{>{\centering\arraybackslash}X>{\centering\arraybackslash}X }
+\hline
+\textbf{Volume HCl added (mL)} & \textbf{pH} \\ \hline
+0                        & 11.1        \\
+2                        & 10.1        \\
+3                        & 9.9         \\
+4                        & 9.7         \\
+4.5                      & 9.7         \\
+5                        & 9.6         \\
+5.5                      & 9.5         \\
+5.8                      & 9.5         \\
+6                        & 9.5         \\
+6.2                      & 9.4         \\
+6.4                      & 9.4         \\
+6.5                      & 9.4         \\
+6.6                      & 9.3         \\
+6.7                      & 9.3         \\
+6.8                      & 9.3         \\
+6.9                      & 9.3         \\
+7.1                      & 9.2         \\
+7.3                      & 9.2         \\
+7.4                      & 9.1         \\
+7.5                      & 9.1         \\
+7.7                      & 9.1         \\
+7.9                      & 9           \\
+8.1                      & 9           \\
+8.3                      & 8.9         \\
+8.4                      & 8.9         \\
+8.5                      & 8.9         \\
+8.6                      & 8.8         \\
+8.7                      & 8.8         \\
+8.8                      & 8.7         \\
+8.9                      & 8.7         \\
+9                        & 8.7         \\
+9.2                      & 8.5         \\
+9.4                      & 8.5         \\
+9.6                      & 8.4         \\
+9.9                      & 8.2         \\
+10.1                     & 8           \\
+10.3                     & 7.4         \\
+10.4                     & 7.2         \\
+10.5                     & 6.1         \\
+10.6                     & 4           \\
+10.8                     & 2.3         \\
+11                       & 2           \\
+11.3                     & 1.8         \\
+11.6                     & 1.6         \\
+12.7                     & 1.3         \\
+14                       & 1.2         \\
+16                       & 1           \\ \hline
+\end{tabularx}
+\caption{Data for titration of NH$_3$ with HCl (Case 2)}
+\end{table}
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{.8\textwidth}{>{\centering\arraybackslash}X>{\centering\arraybackslash}X }
+\hline
+\textbf{Volume NaOH added (mL)} & \textbf{pH} \\ \hline
+0                         & 2.8         \\
+2                         & 3.8         \\
+3                         & 4.1         \\
+4                         & 4.3         \\
+5                         & 4.6         \\
+6                         & 4.9         \\
+6.5                       & 5.1         \\
+7                         & 5.4         \\
+7.5                       & 5.8         \\
+8                         & 9.5         \\
+8.1                       & 10.7        \\
+8.2                       & 11.2        \\
+8.3                       & 11.4        \\
+8.4                       & 11.5        \\
+8.5                       & 11.6        \\
+8.7                       & 11.7        \\
+8.9                       & 11.8        \\
+9.4                       & 11.9        \\
+9.9                       & 12.1        \\
+10.4                      & 12.1        \\
+11.5                      & 12.2        \\
+13.4                      & 12.3        \\ \hline
+\end{tabularx}
+\caption{Data for titration of HC$_2$H$_3$O$_2$ with NaOH (Case 3)}
+\end{table}
+\clearpage
+
+\vspace{1cm}
+
+\begin{sidewaysfigure}[ht]
+\begin{tikzpicture}
+\begin{axis}[
+  title={pH vs Volume HCl Added for Titration of NaOH (Case 1)},
+  xmin = 0,
+  xmax = 16,
+  ymin = 0,
+  xlabel=Volume HCl added (mL),
+  ylabel=pH,
+  grid=both,
+  width=22cm]
+\addplot table [y=pH, x=Volume, width=\textwidth]{case_1.txt};
+\textbf{xtick = {0, 1, ..., 16}}
+\end{axis}
+\end{tikzpicture}
+\end{sidewaysfigure}
+
+\begin{sidewaysfigure}[ht]
+\begin{tikzpicture}
+\begin{axis}[
+  title={pH vs Volume HCl Added for Titration of NH$_3$ (Case 2)},
+  xmin = 0,
+  xmax = 16,
+  ymin = 0,
+  xlabel=Volume HCl added (mL),
+  ylabel=pH,
+  grid=both,
+  width=22cm]
+\addplot table [y=pH, x=Volume, width=\textwidth]{case_2.txt};
+\end{axis}
+\end{tikzpicture}
+\end{sidewaysfigure}
+
+\begin{sidewaysfigure}[ht]
+\begin{tikzpicture}
+\begin{axis}[
+  title={pH vs Volume NaOH Added for Titration of HC$_2$H$_3$O$_2$ (Case 3)},
+  xmin = 0,
+  xmax = 16,
+  ymin = 0,
+  xlabel=Volume NaOH added (mL),
+  ylabel=pH,
+  grid=both,
+  width=22cm]
+\addplot table [y=pH, x=Volume, width=\textwidth]{case_3.txt};
+\end{axis}
+\end{tikzpicture}
+\end{sidewaysfigure}
+
+
+\section{Data Analysis}
+Case 1: Molarity of NaOH calculation:
+\\
+This calculation is for the molarity of the strong base, NaOH
+\begin{equation}
+M_{a}V_{a}=M_{b}V_{b}
+\end{equation}
+$$M_{a}=1.00 \text{mol/L}$$
+$$V_{a}=8.8 \text{mL (taken from the estimated equivalence point from graph)}$$
+$$V_{b}=10 \text{mL}$$
+$$M_{b}=?\text{ mol/L}$$
+$$1.00\text{mol/L}\cdot8.8\text{mL}=M_{b}\cdot10\text{mL}$$
+$$M_{b}=\frac{1.00\text{mol/L}\cdot8.8\text{mL}}{10\text{mL}}$$
+$$M_{b}=0.88\text{mol/L}$$
+\\
+Case 2: Molarity of NH$_{3}$ calculation:
+\\
+This calculation is for the molarity of the weak base, ammonia.
+\begin{equation}
+M_{a}V_{a}=M_{b}V_{b}
+\end{equation}
+
+$$M_{a}=1.00 \text{mol/L}$$
+$$V_{a}=10.6 \text{mL (taken from the estimated equivalence point from graph)}$$
+$$M_{b}=?\text{ mol/L}$$
+$$V_{b}=10 \text{mL}$$
+$$1.00\text{mol/L}\cdot10.6\text{mL}=M_{b}\cdot10\text{mL}$$
+$$M_{b}=\frac{1.00\text{mol/L}\cdot10.6\text{mL}}{10\text{mL}}$$
+$$M_{b}=1.06\text{mol/L}$$
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+  title={pH vs Volume HCl for Titration of NH$_3$},
+  xmin = 0,
+  xmax = 16,
+  ymin = 0,
+  xlabel=Volume HCl added (mL),
+  ylabel=pH,
+  width=13cm]
+\fill[blue!10!white] (0.05,10.5) rectangle (15.95,8.5);
+\addplot table [y=pH, x=Volume, width=\textwidth]{case_2.txt};
+\draw[red, dashed] (0,9.5) -- (16,9.5);
+\end{axis}
+\end{tikzpicture}
+\caption{pH vs Volume HCl for Titration of NH$_3$. The dashed line indicates the half equivalence point, and the shaded region represents the buffer region.}
+\end{figure}
+
+Based on Figure 1, we can use the $\frac{1}{2}$ equivalence point to determine the pK$_{b}$ and K$_{b}$ value for the ammonia.\\
+At the $\frac{1}{2}$ equivalence point, pH=pK$_{a}$.
+$$pK_{a}=9.50 \text{ so pK$_{b}$=4.50}$$
+$$K_{b}=10^{-4.50}$$
+$$K_{b}=3.16\times 10^{-5}$$
+\\
+
+
+Case 3: Molarity of HC$_{2}$H$_{3}$O$_{2}$ calculation:
+\\
+This calculation is for the molarity of the weak acid, acetic acid.
+\begin{equation}
+M_{a}V_{a}=M_{b}V_{b}
+\end{equation}
+$$M_{a}=? \text{ mol/L}$$
+$$V_{a}=10\text{mL}$$
+$$M_{b}=1.00\text{mol/L}$$
+$$V_{b}=7.70 \text{mL (taken from the estimated equivalence point from graph)}$$
+$$M_{a}\cdot10\text{mL}=1.00\text{mol/L}\cdot7.70\text{mL}$$
+$$M_{a}=\frac{1.00\text{mol/L}\cdot7.70\text{mL}}{10\text{mL}}$$
+$$M_{a}=0.77\text{mol/L}$$
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+  title={pH vs Volume NaOH Added for Titration of HC$_2$H$_3$O$_2$},
+  xmin = 0,
+  xmax = 16,
+  ymin = 0,
+  xlabel=Volume NaOH added (mL),
+  ylabel=pH,
+  width=13cm]
+\fill[blue!10!white] (0.05,3.4) rectangle (15.95,5.6);
+\addplot table[y=pH, x=Volume, width=\textwidth]{case_3.txt};
+\draw[red, dashed] (0,4.5) -- (16,4.5);
+\end{axis}
+\end{tikzpicture}
+\caption{pH vs Volume NaOH Added for Titration of HC$_2$H$_3$O$_2$. The dashed line indicates the half equivalence point, and the shaded region represents the buffer region.}
+\end{figure}
+
+Based on Figure 2, we can use the $\frac{1}{2}$ equivalence point to determine the pK$_{a}$ and K$_{a}$ value for the acetic acid.
+\\
+At the $\frac{1}{2}$ equivalence point, pH=pK$_{a}$.
+$$pK_{a}=4.50$$
+$$K_{a}=10^{-4.50}$$
+$$K_{a}=3.16\times 10^{-5}$$
+
+\section{Percent Error Calculation}
+\text{True value for K$_{b}$ of ammonia=1.8\times10$^{-5}$}\\
+\text{True value for K$_{a}$ of acetic acid=1.8\times10$^{-5}$}\\
+\begin{equation}
+\frac{|\text{true value}-\text{experimental value}|}{|\text{true value}|}\times 100
+\end{equation}
+Because we experimentally obtained the same K$_{a}$ and K$_{b}$ values and the true values are equal, the percent error is the same for both ammonia and acetic acid.
+$$\frac{|1.8\times10^{-5}-3.16\times10^{-5}|}{|1.8\times10^{-5}|}\times 100$$
+$$=\frac{1.36\times10^{-5}}{1.8\times10^{-5}}\times 100$$
+$$=0.756\times 100$$
+$$=75.6\%$$
+\clearpage
+\section{Conclusion}
+The primary difference between a strong base and a strong acid titration and weak acid/base with a strong acid/base titration is in the pH of the equivalence point. Strong-strong equivalence points are usually at a pH of 7, while weak-strong equivalence points are either above or below that. More specifically, weak bases titrated with strong acids have slightly acidic equivalence points (pH below 7) while weak acids titrated with strong bases have slightly basic equivalence points (pH above 7). The reason for the latter is because the conjugate acid for a strong base is practically neutral while the conjugate base for a weak acid is slightly basic; this makes the final solution slightly basic. Meanwhile in a strong-strong solution, the conjugate base and acids for both reactants are neutral, thus leading to neutral products. Information that can be obtained from the titration curves is the molarity of an unknown acid or base. If the molarity of the titrant is known, then the molarity of the unknown titrand can be determined using the equivalence point. The shapes are different because the stronger acids and bases have a smaller slope initially and towards the end (such as in Case 1 between 0 and 8 mL added where the pH practically did not change), and have much steeper drops/rises than weaker acids and bases. Also, the weak bases/acids being titrated with strong acids/bases create a buffer solution (such as in Case 3, between 0 and 7 mL added the solution resisted large changes to pH) while strong acids/bases being titrated with strong acids/bases do not create buffer solutions. The strong acid with strong base (or vice versa) titration conveniently indicates the molarity of the involved substances, while those of weak acids and bases indicate the K$_{a}$ and K$_{b}$ of the solutions.
+
+\end{document}
